@@ -55,9 +55,6 @@ PRICES = [12.5, 9.9, 15.0, 22.3, 5.0]
 QUANTITIES = [2, 5, 1, 3, 4]
 
 
-# ---------- Part A: functional style ----------
-
-
 def item_totals(prices: list[float], quantities: list[int]) -> list[float]:
     """Return price * quantity for each item, using map() and a lambda."""
     return list(map(lambda p, q: p * q, prices, quantities))
@@ -71,9 +68,6 @@ def filter_above(totals: list[float], threshold: float = 30) -> list[float]:
 def pair_up(prices: list[float], quantities: list[int]) -> list[tuple]:
     """Return a list of (price, quantity) tuples, using zip()."""
     return list(zip(prices, quantities))
-
-
-# ---------- Part B: list comprehensions ----------
 
 
 def item_totals_comp(prices: list[float], quantities: list[int]) -> list[float]:
